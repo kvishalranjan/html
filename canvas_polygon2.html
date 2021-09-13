@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas style="border: thin solid rgb(243, 14, 14);" id="canvas1" width="400" height="500"></canvas>
+    <script>
+        var ct=document.getElementById("canvas1");
+        var r=ct.getContext("2d");
+        r.beginPath();
+       // r.moveTo(10,80)
+       r.lineWidth="4";
+        r.arc(120,110,100,50,Math.PI*2,true);//arc(x,y,radius,startangle,endangle,anticlockwise)
+        r.stroke();//to create an inner circle
+        r.beginPath();
+        r.arc(50,110,20,20,Math.PI*2,true);//left side circle
+        r.stroke();
+        r.beginPath();
+        r.arc(190,110,20,20,Math.PI*2,true);//right side circle
+        r.stroke();
+        r.beginPath();
+        r.arc(120,180,20,20,Math.PI*2,true);//right side circle
+        r.stroke();
+        r.beginPath();
+        r.arc(120,40,20,20,Math.PI*2,true);//right side circle
+        r.stroke();
+
+    </script>    
+</body>
+</html>

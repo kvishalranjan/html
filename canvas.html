@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <canvas style="border: thin solid rgb(243, 14, 14);" id="canvas1" width="400" height="500"></canvas>
+    <script>
+        var ct=document.getElementById("canvas1")
+        var line1=ct.getContext("2d")
+        line1.moveTo(0,0);
+        line1.lineTo(400,500);
+        line1.stroke();
+    </script>
+</body>
+</html>

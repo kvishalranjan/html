@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas style="border: thin solid rgb(243, 14, 14);" id="canvas1" width="400" height="500"></canvas>
+    <script>
+        var ct=document.getElementById("canvas1");
+        var r=ct.getContext("2d");
+        r.beginPath();
+       // r.moveTo(10,80)
+        r.lineWidth="2";
+        r.arc(90,80,60,0,Math.PI*2,true)
+        r.stroke();
+        r.beginPath();
+        r.strokeStyle="red";
+        r.rect(45,40,40,40);
+        r.fillStyle="yellow";
+        r.fillRect(45,40,40,40);
+        r.stroke();
+    </script>     
+</body>
+</html>
